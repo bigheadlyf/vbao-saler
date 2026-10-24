@@ -1,5 +1,7 @@
 # MVP数据源方案 SearXNG与抖音
 
+> 2026-10-24更新：用户暂不使用SearXNG。当前搜索与模型选型以[DeepSeek方案v1.1](出海企业商机发现Agent_MVP数据源与模型方案_DeepSeek_v1.1.md)为准；下文SearXNG部署与引擎验证保留为历史方案，暂停实施。抖音可选边界继续适用。
+
 版本：1.0  
 核对日期：2026年10月23日  
 适用架构：Python、FastAPI、SQLite、单个串行Worker  

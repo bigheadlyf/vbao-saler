@@ -15,3 +15,12 @@ __pycache__/
 
 # Office temporary files
 ~$*
+
+# Agent runtime artifacts
+data/
+logs/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/

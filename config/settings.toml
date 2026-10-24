@@ -1,0 +1,53 @@
+config_version = "1"
+cities = ["珠海"]
+timezone = "Asia/Hong_Kong"
+monthly_budget_micro_cny = 500000000
+# Enable only after confirming credentials, pricing and source conditions.
+live_enabled = false
+source_terms_confirmed = false
+allowed_domains = []
+
+[paths]
+database = "../data/agent.db"
+reports = "../data/reports"
+backups = "../data/backups"
+
+[search]
+count = 5
+need_content = false
+daily_query_limit = 20
+cache_seconds = 86400
+timeout_seconds = 30
+attempts = 2
+interval_seconds = 1.0
+keywords = ["外贸 出口 企业 联系我们", "跨境电商 多币种", "海外客户 收款"]
+
+[model]
+name = "deepseek-flash"
+thinking = "disabled"
+max_input_bytes = 24000
+max_output_tokens = 2048
+
+[pricing]
+verified_on = 2026-10-24
+search_micro_cny = 5000
+input_micro_cny_per_million = 2000000
+output_micro_cny_per_million = 8000000
+
+[retention]
+# Fill evidence_days, contacts_days, reports_days and logs_days before continuous collection.
+
+[product]
+description = "聚合跨境支付、多渠道、多币种；具体准入条件待确认"
+
+[product.known_conditions]
+
+[[exclusions]]
+name = "香港帝晶燈飾有限公司"
+verified = false
+[[exclusions]]
+name = "东莞市东城品德电子经营部"
+verified = false
+[[exclusions]]
+name = "纳优服飾有限公司"
+verified = false

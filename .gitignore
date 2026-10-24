@@ -1,0 +1,17 @@
+# Generated document previews and validation output
+docs/_build/render/
+docs/_build/tmp/
+docs/_build/*.png
+docs/_build/*.pdf
+docs/_build/content_validation.json
+
+# Python caches and local environment
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+
+# Office temporary files
+~$*
